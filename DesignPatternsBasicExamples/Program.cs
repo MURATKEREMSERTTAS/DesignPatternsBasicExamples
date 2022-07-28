@@ -1,4 +1,5 @@
 ﻿using DesignPatternsBasicExamples.AbstractFactory;
+using DesignPatternsBasicExamples.Builder;
 using DesignPatternsBasicExamples.Factory;
 using DesignPatternsBasicExamples.Singleton;
 using System;
@@ -11,6 +12,7 @@ namespace DesignPatternsBasicExamples
             new SingletonClient().Main();
             new FactoryClient().Main();
             new AbstractFactoryClient().Main();
+            new BuilderClient().Main();
         }
     }
 }
