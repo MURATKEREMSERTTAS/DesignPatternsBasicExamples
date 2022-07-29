@@ -1,5 +1,6 @@
 ﻿using DesignPatternsBasicExamples.AbstractFactory;
 using DesignPatternsBasicExamples.Adapter;
+using DesignPatternsBasicExamples.Bridge;
 using DesignPatternsBasicExamples.Builder;
 using DesignPatternsBasicExamples.Factory;
 using DesignPatternsBasicExamples.Prototype;
@@ -17,6 +18,7 @@ namespace DesignPatternsBasicExamples
             new AdapterClient().Main();
             new BuilderClient().Main();
             new PrototypeClient().Main();
+            new BridgeClient().Main();
         }
     }
 }

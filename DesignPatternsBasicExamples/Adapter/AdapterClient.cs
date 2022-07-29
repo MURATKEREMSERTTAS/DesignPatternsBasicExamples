@@ -11,12 +11,12 @@ namespace DesignPatternsBasicExamples.Adapter
     {
         public void Main()
         {
-            var customOperation = new CustomOperation(new PlasticPergoleAdapter());
+            var customOperation = new CustomOperation(new PlasticToSteelAdapter());
             IProductType productType = customOperation.CreateProductType();
-            IProduct product = customOperation.CreateProduct();
+            ISteelProduct product = customOperation.CreateProduct();
             Console.WriteLine("------------------------------");
-            Console.WriteLine("Adapting plastic pergole");
-            Console.WriteLine(product.GetProduct());
+            Console.WriteLine("New Product Adapting");
+            Console.WriteLine(product.GetNewMethod());
             Console.WriteLine(productType.GetProductType());
         }
     }

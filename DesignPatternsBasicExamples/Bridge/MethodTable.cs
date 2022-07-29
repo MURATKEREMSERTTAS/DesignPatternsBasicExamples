@@ -5,11 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternsBasicExamples.Adapter
+namespace DesignPatternsBasicExamples.Bridge
 {
-    interface IProductAdapter
+    class MethodTable : IFurnitureMethod
     {
-        public IProductType CreateProductType();
-        public ISteelProduct CreateProduct();
+
+        public string GetFurniture()
+        {
+            return "Vintage Table";
+        }
     }
 }

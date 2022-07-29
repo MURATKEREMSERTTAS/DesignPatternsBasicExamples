@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DesignPatternsBasicExamples.Adapter
 {
-    class PlasticPergoleAdapter : IProductAdapter
+    class PlasticToSteelAdapter : IProductAdapter
     {
-        PlasticPergole plasticPergole = new PlasticPergole();
-        public IProduct CreateProduct()
+        PlasticToSteel plasticPergole = new PlasticToSteel();
+        public ISteelProduct CreateProduct()
         {
             
             return plasticPergole.CreateProduct();

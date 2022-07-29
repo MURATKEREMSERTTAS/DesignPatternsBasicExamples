@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 
 namespace DesignPatternsBasicExamples.Adapter
 {
-    interface IProductAdapter
+    class PlasticToSteel
     {
-        public IProductType CreateProductType();
-        public ISteelProduct CreateProduct();
+        public IProductType CreateProductType()
+        {
+            return new Plastic();
+        }
+        public ISteelProduct CreateProduct()
+        {
+            return new SteelDoor();
+        }
     }
 }

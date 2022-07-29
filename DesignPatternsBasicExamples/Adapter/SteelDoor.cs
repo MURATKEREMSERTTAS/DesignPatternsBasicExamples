@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatternsBasicExamples.Adapter
 {
-    class PlasticPergole
+    class SteelDoor : ISteelProduct
     {
-        public IProductType CreateProductType()
+        public string GetNewMethod()
         {
-            return new Plastic();
-        }
-        public IProduct CreateProduct()
-        {
-            return new Pergole();
+            return "New Product SteelDoor";
         }
     }
 }

@@ -20,7 +20,7 @@ namespace DesignPatternsBasicExamples.Adapter
         {
             return productAdapter.CreateProductType();
         }
-        public IProduct CreateProduct()
+        public ISteelProduct CreateProduct()
         {
             return productAdapter.CreateProduct();
         }

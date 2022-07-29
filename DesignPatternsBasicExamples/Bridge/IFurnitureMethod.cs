@@ -5,11 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternsBasicExamples.Adapter
+namespace DesignPatternsBasicExamples.Bridge
 {
-    interface IProductAdapter
+    interface IFurnitureMethod
     {
-        public IProductType CreateProductType();
-        public ISteelProduct CreateProduct();
+        string GetFurniture();
     }
 }
